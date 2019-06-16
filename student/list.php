@@ -44,11 +44,6 @@ $result = $db_con->query($sql);
 
             echo"</tr>";
             echo "<br>";
-
-
-            
-
-           
 			
 		}
 		 echo "</table>";
