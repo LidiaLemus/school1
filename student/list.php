@@ -24,12 +24,6 @@ $result = $db_con->query($sql);
             echo"<td>";
                 echo"Birthdate";
             echo"</td>";
-            echo"<td>";
-                echo"Edit";
-            echo"</td>";
-            echo"<td>";
-                echo"remove";
-            echo"</td>";
             echo"</tr>";
 		    foreach ($result as  $value) {
 
@@ -47,7 +41,6 @@ $result = $db_con->query($sql);
             echo  "<br>" . $value["birthdate"];
 
             echo"</td>";
-            
 
             echo"</tr>";
             echo "<br>";
