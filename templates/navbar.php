@@ -1,4 +1,4 @@
-<nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item">
       <img src="http://<?php echo $_SERVER['SERVER_NAME'];?>/school1/imagen/imagen1.jpg" width="90" height="50">

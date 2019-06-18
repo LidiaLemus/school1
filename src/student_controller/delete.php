@@ -1,10 +1,17 @@
-<?php 
-include_once('../database/connection.php');
+<?php
 
-$id = $_GET['id'];
-$sql = "UPDATE student SET is_active = 0 WHERE id = $id";
+include_once("../database/connection");
 
-$db_con -> exec($sql);
-header('Location: ../../student/list.php');
+if (isset($_GET['id'])){
+	$id = $_GET['id'];
+	$query = "DELETE FROM student WHERE id = $id";
+	$result = mysqli_query($conn,$query);
+	if (!$result){
+		die("Query Failed");
+	  }
+	$_SESSION['message'] = 'student Removed Successfully';
+	$_SESSION['message_type'] = 'danger';
+	header("Location: index.php");
+}
 
-?>
+ ?>

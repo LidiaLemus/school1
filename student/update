@@ -1,18 +1,11 @@
 <?php require_once('templates/header.php'); ?>
 <?php require_once('templates/navbar.php'); ?>
 
-<form action="update.php?id=<?php echo $_GET['id']; ?>" method="GET">
-                    <div class="form-group">
-                        <input type="text" name="fullname" value="<?php echo $fullname; ?>" class="form-control" placeholder="Update fullname">
-                    </div>
-                    <div class="form-group">
-                        <input name="birthdate" type="date" placeholder="Update birthdate">
-                            <?php echo   $birthdate; ?>
-                        </input>
-                    </div>
-                    <button class="btn btn-success" name="update">
-                        Update
-                    </button>
-                </form>
+<form action="student_controller/update">
+    <input type="hidden" name="id" value="">
+    <input type="text" name="fullname">
+    <input type="date" name="birthdate">
 
-<?php require_once('templates/footer.php'); ?>
+</form>
+
+<?php require_once('templates/footer.php');?>
