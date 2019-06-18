@@ -1,7 +1,7 @@
-<nav class="navbar is-light is-danger" role="navigation" aria-label="main navigation">
+<nav class="navbar is-danger" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    <a class="navbar-item">
+      <img src="http://<?php echo $_SERVER['SERVER_NAME'];?>/school1/imagen/imagen1.jpg" width="90" height="50">
     </a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

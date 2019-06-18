@@ -12,7 +12,7 @@ $result = $db_con->query($sql);
 	<div class="column"></div>
 	<div class="column is-three-quarters">
 		<?php 
-		echo "<table border=1px>";
+		echo "<table border=2px>";
 
             echo"<tr>";
             echo"<td>";
@@ -41,6 +41,7 @@ $result = $db_con->query($sql);
             echo  "<br>" . $value["birthdate"];
 
             echo"</td>";
+                echo"<td>";
 
             echo"</tr>";
             echo "<br>";

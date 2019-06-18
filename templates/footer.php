@@ -1,7 +1,7 @@
-<footer class="footer">
+<footer class="footer is-light">
   <div class="content has-text-centered">
     <p>
-      <strong>Mi Footer</strong>
+      <strong>SCHOOLDB</strong>
     </p>
   </div>
 </footer>
