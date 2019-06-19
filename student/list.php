@@ -44,7 +44,7 @@
                                     . "?id=" . $values["id"]
                                     . "&fullname=" . $values["fullname"]
                                     . "&codigo=" . $values["codigo"]
-                                    . "' class = 'button is-small is-success is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>perfil</span></a></td>"
+                                    . "' class = 'button is-small is-link is-outlined'><span class='icon is-small'><i class='fas fa-male'></i></span><span>perfil</span></a></td>"
                                     . "</td><td>"
                                     . "<a href='../src/student_controller/delete.php?id="
                                     . $values["id"]
