@@ -1,9 +1,8 @@
 <?php require_once('templates/header.php'); ?>
 <?php require_once('templates/navbar.php'); ?>
+<?php require_once('templates/menu.php'); ?>
 
-<div class="hero is-fullheight">
-	<a href="student/list.php">Lista Estudiantes</a>
-</div>
+
 
 <?php require_once('templates/footer.php'); ?>
 

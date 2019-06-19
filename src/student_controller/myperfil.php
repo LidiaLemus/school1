@@ -17,7 +17,7 @@
                     <thead>
                         <th class="title is-5">Codigo</th>
                         <th class="title is-5">Nombre</th>
-                        <th class="title is-5">Fecha de Nacimiento</th>
+                       
                     </thead>
                     <tbody>
                         <?php
@@ -31,24 +31,13 @@
                                     . "</td><td>"
                                     . $values["fullname"]
                                     . "</td><td>"
-                                    . $values["birthdate"]
                                     . "</td><td>"
-                                    . "<a href='update.php"
-                                    . "?id=" . $values["id"]
-                                    . "&fullname=" . $values["fullname"]
-                                    . "&birthdate=" . $values["birthdate"]
-                                    . "' class = 'button is-small is-warning is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>Editar</span></a></td>"
-                                    . "</td><td>"
-
                                     . "<a href='perfil.php"
                                     . "?id=" . $values["id"]
-                                    . "&fullname=" . $values["fullname"]
                                     . "&codigo=" . $values["codigo"]
+                                    . "&fullname=" . $values["fullname"]
                                     . "' class = 'button is-small is-success is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>perfil</span></a></td>"
-                                    . "</td><td>"
-                                    . "<a href='../src/student_controller/delete.php?id="
-                                    . $values["id"]
-                                    . "' class = 'button is-small is-danger is-outlined'><span class='icon is-small'><i class='fas fa-times'></i></span><span>Eliminar</span></a></td>";
+                                    . "</td><td>";
                             }
                         }
                         ?>

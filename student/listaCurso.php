@@ -10,28 +10,24 @@
     <div class="column is-three-fifths">
         <div class="card">
             <header class="card-header">
-                <p class="card-header-title title is-3">ESTUDIANTES INSCRITOS</p>
+                <p class="card-header-title title is-3">Lista de cursos</p>
             </header>
             <div class="card-cotent is-flex is-horizontal-center">
                 <table class="table is-hoverable">
                     <thead>
-                        <th class="title is-5">Codigo</th>
-                        <th class="title is-5">Nombre</th>
-                        <th class="title is-5">Fecha de Nacimiento</th>
+                        <th class="title is-5">Curso Asignados</th>
                     </thead>
                     <tbody>
                         <?php
                         include('../src/database/connection.php');
-                        $sql = 'select * from student';
+                        $sql = 'select * from subject';
                         $result = $db_con->query($sql);
                         foreach ($result as $values) {
                             if ($values["is_active"] == 1) {
                                 echo "<tr><td>"
                                     . $values["codigo"]
                                     . "</td><td>"
-                                    . $values["fullname"]
-                                    . "</td><td>"
-                                    . $values["birthdate"]
+                                    . $values["name"]
                                     . "</td><td>"
                                     . "<a href='update.php"
                                     . "?id=" . $values["id"]
