@@ -9,19 +9,15 @@
         </div>
 	<div class="column"></div>
 	<div class="column is-three-quarters">
-		<form method="post" action="../src/student_controller/create.php">
+		<form method="post" action="../src/student_controller/create_subject.php">
 
 			<div class="field">
-  <label class="label">Nuevo Estudiante</label>
+  <label class="label">Nuevo Curso</label>
   <div class="control">
-    <input class="input" type="text" placeholder="Full name" name="fullname">
+    <input class="input" type="text" placeholder="name" name="name">
   </div>
 </div>
-<div class="field">
-  <div class="control">
-    <input class="input" type="date" name="birthdate">
-  </div>
-</div>
+
 <div class="field is-grouped is-pulled-right">
 	<div class="control">
 		<button class="button is-success">Guardar</button>

@@ -10,12 +10,13 @@
     <div class="column is-three-fifths">
         <div class="card">
             <header class="card-header">
-                <p class="card-header-title title is-3">Lista de cursos</p>
+                <p class="card-header-title title is-3">Cursos</p>
             </header>
             <div class="card-cotent is-flex is-horizontal-center">
                 <table class="table is-hoverable">
                     <thead>
-                        <th class="title is-5">Curso Asignados</th>
+                        <th class="title is-5">Codigo</th>
+                        <th class="title is-5">Nombre Curso</th>
                     </thead>
                     <tbody>
                         <?php
@@ -29,20 +30,18 @@
                                     . "</td><td>"
                                     . $values["name"]
                                     . "</td><td>"
-                                    . "<a href='update.php"
+                                    . "<a href='update_subject.php"
                                     . "?id=" . $values["id"]
-                                    . "&fullname=" . $values["fullname"]
-                                    . "&birthdate=" . $values["birthdate"]
+                                    . "&name=" . $values["name"]
                                     . "' class = 'button is-small is-warning is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>Editar</span></a></td>"
                                     . "</td><td>"
-
                                     . "<a href='perfil.php"
                                     . "?id=" . $values["id"]
-                                    . "&fullname=" . $values["fullname"]
+                                    . "&fullname=" . $values["name"]
                                     . "&codigo=" . $values["codigo"]
-                                    . "' class = 'button is-small is-success is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>perfil</span></a></td>"
+                                    . "' class = 'button is-small is-link is-outlined'><span class='icon is-small'><i class='fas fa-male'></i></span><span>perfil</span></a></td>"
                                     . "</td><td>"
-                                    . "<a href='../src/student_controller/delete.php?id="
+                                    . "<a href='../src/student_controller/delete_subject.php?id="
                                     . $values["id"]
                                     . "' class = 'button is-small is-danger is-outlined'><span class='icon is-small'><i class='fas fa-times'></i></span><span>Eliminar</span></a></td>";
                             }
