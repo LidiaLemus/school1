@@ -35,11 +35,7 @@
                                     . "&name=" . $values["name"]
                                     . "' class = 'button is-small is-warning is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>Editar</span></a></td>"
                                     . "</td><td>"
-                                    . "<a href='perfil.php"
-                                    . "?id=" . $values["id"]
-                                    . "&fullname=" . $values["name"]
-                                    . "&codigo=" . $values["codigo"]
-                                    . "' class = 'button is-small is-link is-outlined'><span class='icon is-small'><i class='fas fa-male'></i></span><span>perfil</span></a></td>"
+                                    
                                     . "</td><td>"
                                     . "<a href='../src/student_controller/delete_subject.php?id="
                                     . $values["id"]

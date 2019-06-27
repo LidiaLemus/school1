@@ -22,7 +22,7 @@
                     <tbody>
                         <?php
                         include('../src/database/connection.php');
-                        $sql = 'select * from student';
+                        $sql = 'SELECT * FROM student WHERE is_active = 1';
                         $result = $db_con->query($sql);
                         foreach ($result as $values) {
                             if ($values["is_active"] == 1) {
@@ -39,12 +39,12 @@
                                     . "&birthdate=" . $values["birthdate"]
                                     . "' class = 'button is-small is-warning is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>Editar</span></a></td>"
                                     . "</td><td>"
-
-                                    . "<a href='perfil.php"
+                                    . "<a href='detail.php"
                                     . "?id=" . $values["id"]
                                     . "&fullname=" . $values["fullname"]
-                                    . "&codigo=" . $values["codigo"]
-                                    . "' class = 'button is-small is-link is-outlined'><span class='icon is-small'><i class='fas fa-male'></i></span><span>perfil</span></a></td>"
+                                    . "&birthdate=" . $values["birthdate"]
+                                    
+                                    . "' class = 'button is-small is-primary is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>perfil</span></a></td>"
                                     . "</td><td>"
                                     . "<a href='../src/student_controller/delete.php?id="
                                     . $values["id"]

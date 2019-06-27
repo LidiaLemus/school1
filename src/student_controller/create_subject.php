@@ -1,6 +1,8 @@
 <?php 
 
 require_once('../database/connection.php');
+
+$save = $_POST['save'];
 $name = $_POST['name'];
 
 
