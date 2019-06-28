@@ -9,7 +9,7 @@
         </div>
 	<div class="column"></div>
 	<div class="column is-three-quarters">
-		<form method="post" action="../src/student_controller/create_subject.php">
+		<form method="post" action="../src/subject_controller/create_subject.php">
 
 			<div class="field">
   <label class="label">Nuevo Curso</label>

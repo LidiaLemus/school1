@@ -1,25 +1,25 @@
-<?php require_once('../templates/header.php'); ?>
-<?php require_once('../templates/navbar.php'); ?>
+<?php require_once('../../templates/header.php'); ?>
+<?php require_once('../../templates/navbar.php'); ?>
 <br>
-<?php require_once('../src/database/connection.php');
+<?php require_once('../../src/database/connection.php');
 
 $id = $_GET['id'];
 
-    $sql = "SELECT s.codigo, s.fullname as nombre, ROUND(datediff(now(), s.birthdate)/365) as edad "
-            ."FROM student s "  
-            ."WHERE s.id = $id";
+    $sql = "SELECT s.codigo,s.fullname as nombre, ROUND(datediff(now(), s.birthdate)/365)as edad
+            FROM student s  
+            WHERE s.id = $id";
     
-   $sqld = "SELECT sub.name as curso, ssy.score as nota, anio(sy.end_date) as eva, y.year as ciclo "
-          ."FROM student s, subject sub, student_subject_year ssy, year y, subject_year sy "
-          ."WHERE ssy.student_id = s.id "
-          ."AND  ssy.subject_year_Id = sy.id "
-          ."AND sy.subject_id = sub.id "
-          ."AND sy.year_Id = y.id " 
-          ."AND s.id = $id ";
+   $sqld = "SELECT sub.name as curso,ssy.score as nota, anio(sy.end_date) as eva, y.year as ciclo
+          FROM student s, subject sub, student_subject_year ssy, year y, subject_year sy
+          WHERE ssy.student_id = s.id
+          AND  ssy.subject_year_Id = sy.id
+          AND sy.subject_id = sub.id
+          AND sy.year_id = y.id
+          AND s.id = $id";
             
     if($db_con) {
         $result = $db_con->query($sql);
-        $student = $db_con->query($sql);
+        $student = $db_con->query($sqld);
     }
 ?>
 <?php if($result==null): ?>
@@ -46,7 +46,7 @@ $id = $_GET['id'];
           <table class="table is-fullwidth">
         <thead>
             <tr>
-                <th>code</th>
+                <th>#</th>
                 <th>Name</th>
                 <th>Year</th>
                 <th>State</th>
@@ -83,4 +83,4 @@ $id = $_GET['id'];
     </table>
 </div>
 <?php endif; ?>
-<?php require_once('../templates/footer.php'); ?>
+<?php require_once('../../templates/footer.php'); ?>

@@ -1,7 +1,7 @@
 <?php require_once('../templates/header.php'); ?>
 <?php require_once('../templates/navbar.php'); ?>
 
-<div class="hero is-light is-fullheight">
+<div>
     <div class="columns">
         <div class="column is-flex is-vcentered">
             <div class="section">
@@ -10,7 +10,7 @@
         </div>
         <div class="column is-trhee-quarters is-vcentered"><br><br><br>
             <div class="box">
-                <form method="get" action="../src/student_controller/update_subject.php?">
+                <form method="get" action="../src/subject_controller/update_subject.php?">
                     <h1 class="title is-4">Actualizar Datos</h1>
 
                     <input type="hidden" name="id" value="<?php echo($_GET['id'])?>">

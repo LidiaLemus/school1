@@ -7,11 +7,9 @@
             
             <ul class="menu-list">
                 <li><a href="/school1/student/new.php">Agregar un nuevo Estudiante</a></li>
-                 <li><a href="/school1/student/new_subject.php">Agregar un nuevo Curso</a></li>
+                 <li><a href="/school1/subject/new_subject.php">Agregar un nuevo Curso</a></li>
                 <li><a href="/school1/student/list.php">Lista de los Estudiantes</a></li>
-                <li><a href="/school1/student/listaCurso.php">Lista de Cursos</a></li>
-                <li><a href="/school1/student/detail.php">Lista inactivos</a></li>
-               
-
-                
+                <li><a href="/school1/subject/listaCurso.php">Lista de Cursos</a></li>
+            
+            </ul>
         </aside>

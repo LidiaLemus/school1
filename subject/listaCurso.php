@@ -37,7 +37,7 @@
                                     . "</td><td>"
                                     
                                     . "</td><td>"
-                                    . "<a href='../src/student_controller/delete_subject.php?id="
+                                    . "<a href='../src/subject_controller/delete_subject.php?id="
                                     . $values["id"]
                                     . "' class = 'button is-small is-danger is-outlined'><span class='icon is-small'><i class='fas fa-times'></i></span><span>Eliminar</span></a></td>";
                             }

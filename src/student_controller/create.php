@@ -1,5 +1,4 @@
 <?php 
-
 require_once('../database/connection.php');
 $fullname = $_POST['fullname'];
 $birthdate = $_POST['birthdate'];

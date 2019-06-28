@@ -12,7 +12,7 @@ if(isset($db_con)== false) {
 
 } else{
 	$db_con->exec($sql);
-	header('Location: ../../student/listaCurso.php');
+	header('Location: ../../subject/listaCurso.php');
 }
 
  ?>

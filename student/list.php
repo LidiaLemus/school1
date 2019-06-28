@@ -22,7 +22,8 @@
                     <tbody>
                         <?php
                         include('../src/database/connection.php');
-                        $sql = 'SELECT * FROM student WHERE is_active = 1';
+                        $sql = 'SELECT * FROM student';
+
                         $result = $db_con->query($sql);
                         foreach ($result as $values) {
                             if ($values["is_active"] == 1) {
@@ -38,8 +39,8 @@
                                     . "&fullname=" . $values["fullname"]
                                     . "&birthdate=" . $values["birthdate"]
                                     . "' class = 'button is-small is-warning is-outlined'><span class='icon is-small'><i class='fas fa-edit'></i></span><span>Editar</span></a></td>"
-                                    . "</td><td>"
-                                    . "<a href='detail.php"
+                                    ."</td><td>"
+                                    . "<a href='../src/perfil/detail.php"
                                     . "?id=" . $values["id"]
                                     . "&fullname=" . $values["fullname"]
                                     . "&birthdate=" . $values["birthdate"]
